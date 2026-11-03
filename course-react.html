@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <meta name="description" content="Learn React by shipping five mini projects covering components, hooks, and working with APIs." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Learn React With Mini Projects | IT Online Education" />
+    <meta property="og:description" content="Learn React by shipping five mini projects covering components, hooks, and working with APIs." />
+    <meta property="og:image" content="./assets/course-1.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Learn React With Mini Projects | IT Online Education" />
+    <meta name="twitter:description" content="Learn React by shipping five mini projects covering components, hooks, and working with APIs." />
+    <meta name="twitter:image" content="./assets/course-1.jpg" />
+    <title>Learn React With Mini Projects | IT Online Education</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav>
+      <div class="left">
+        <div class="logo">
+          <img src="./assets/Logo.png" alt="IT Online Education" />
+        </div>
+        <div class="links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="courses.html" class="active">Courses</a>
+          <a href="articles.html">Articles</a>
+          <a href="podcast.html">Podcast</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button
+          class="hamburger"
+          id="navToggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+        >
+          <i class="bx bx-moon" aria-hidden="true"></i>
+        </button>
+        <a href="podcast.html" aria-label="Listen to podcasts"
+          ><i class="bx bx-headphone" aria-hidden="true"></i
+        ></a>
+        <div class="basket-wrapper">
+          <button
+            class="basket-toggle"
+            id="basketToggle"
+            type="button"
+            aria-label="View course basket"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-basket" aria-hidden="true"></i>
+          </button>
+          <div class="basket-dropdown" id="basketDropdown" hidden>
+            <p class="basket-dropdown-empty">Your basket is empty.</p>
+            <ul class="basket-dropdown-list" hidden></ul>
+            <div class="basket-dropdown-actions">
+              <a href="courses.html">View all courses</a>
+              <button type="button" class="basket-dropdown-clear">Clear basket</button>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" aria-label="Contact support"
+          ><i class="bx bx-user" aria-hidden="true"></i
+        ></a>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <p class="crumb"><a href="index.html">Home</a> / <a href="courses.html">Courses</a> / React</p>
+      <h1>Learn React With Mini Projects</h1>
+      <p>Go from JSX basics to five shipped projects — no fluff, just building.</p>
+    </header>
+
+    <div class="content compact" id="main-content">
+      <div class="course-detail">
+        <article>
+          <img src="./assets/course-1.jpg" alt="React course preview" />
+
+          <h2>About This Course</h2>
+          <p>
+            A hands-on introduction to React that skips the theory-heavy
+            detours and gets you building real interfaces from lesson one.
+            You'll learn components, state, and hooks by shipping five small
+            projects — a component library, a to-do app, a movie search app,
+            a weather dashboard, and a mini e-commerce cart — each one
+            reinforcing the last.
+          </p>
+
+          <h2>What You'll Learn</h2>
+          <ul>
+            <li>Building reusable components with JSX and props</li>
+            <li>Managing state with useState and useEffect</li>
+            <li>Fetching and displaying data from a live API</li>
+            <li>Client-side routing with React Router</li>
+            <li>Deploying a finished React app</li>
+          </ul>
+
+          <h2>Course Content</h2>
+          <ul>
+            <li>Module 1: React Fundamentals &amp; JSX</li>
+            <li>Module 2: Components, Props &amp; State</li>
+            <li>Module 3: Hooks in Depth</li>
+            <li>Module 4: Working with APIs</li>
+            <li>Module 5: Mini Projects &amp; Deployment</li>
+          </ul>
+        </article>
+
+        <aside>
+          <h3>$40</h3>
+          <p><s>$120</s></p>
+          <p><span class="tag"><span>+400</span> Students Enrolled</span></p>
+          <p>Author: John Doe</p>
+          <p>Duration: 10 hours</p>
+          <p>Lifetime Support</p>
+          <button class="course-cta" type="button" data-enroll="Learn React With Mini Projects">Add to basket</button>
+        </aside>
+      </div>
+    </div>
+
+    <footer>
+      <div class="columns">
+        <div class="col">
+          <h5>Site Links</h5>
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html#faq">FAQ</a>
+        </div>
+        <div class="col">
+          <h5>Other Pages</h5>
+          <a href="404.html">404 Page</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="col">
+          <h5>Collaboration</h5>
+          <a href="#">Work With Us</a>
+          <a href="#">Partnerships</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="col last">
+          <h5>About Us</h5>
+          <p>We are a team of passionate educators and professionals dedicated to providing high-quality learning experiences.</p>
+          <div class="social link">
+            <a href="#" aria-label="Facebook"
+              ><i class="bx bxl-facebook" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="bx bxl-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bx bxl-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 IT Online Education. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

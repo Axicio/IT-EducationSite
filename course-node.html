@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <meta name="description" content="Learn to design, build, and test REST APIs with Node.js, Express, and JWT authentication." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Coding APIs With Node.js | IT Online Education" />
+    <meta property="og:description" content="Learn to design, build, and test REST APIs with Node.js, Express, and JWT authentication." />
+    <meta property="og:image" content="./assets/course-6.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Coding APIs With Node.js | IT Online Education" />
+    <meta name="twitter:description" content="Learn to design, build, and test REST APIs with Node.js, Express, and JWT authentication." />
+    <meta name="twitter:image" content="./assets/course-6.jpg" />
+    <title>Coding APIs With Node.js | IT Online Education</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav>
+      <div class="left">
+        <div class="logo">
+          <img src="./assets/Logo.png" alt="IT Online Education" />
+        </div>
+        <div class="links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="courses.html" class="active">Courses</a>
+          <a href="articles.html">Articles</a>
+          <a href="podcast.html">Podcast</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button
+          class="hamburger"
+          id="navToggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+        >
+          <i class="bx bx-moon" aria-hidden="true"></i>
+        </button>
+        <a href="podcast.html" aria-label="Listen to podcasts"
+          ><i class="bx bx-headphone" aria-hidden="true"></i
+        ></a>
+        <div class="basket-wrapper">
+          <button
+            class="basket-toggle"
+            id="basketToggle"
+            type="button"
+            aria-label="View course basket"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-basket" aria-hidden="true"></i>
+          </button>
+          <div class="basket-dropdown" id="basketDropdown" hidden>
+            <p class="basket-dropdown-empty">Your basket is empty.</p>
+            <ul class="basket-dropdown-list" hidden></ul>
+            <div class="basket-dropdown-actions">
+              <a href="courses.html">View all courses</a>
+              <button type="button" class="basket-dropdown-clear">Clear basket</button>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" aria-label="Contact support"
+          ><i class="bx bx-user" aria-hidden="true"></i
+        ></a>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <p class="crumb"><a href="index.html">Home</a> / <a href="courses.html">Courses</a> / Node.js</p>
+      <h1>Coding APIs With Node.js</h1>
+      <p>Design, build, and test REST APIs with Node.js and Express like a backend developer.</p>
+    </header>
+
+    <div class="content compact" id="main-content">
+      <div class="course-detail">
+        <article>
+          <img src="./assets/course-6.jpg" alt="Node.js API course preview" />
+
+          <h2>About This Course</h2>
+          <p>
+            Learn to design and build REST APIs with Node.js and Express —
+            routing, middleware, and connecting to a database — then test
+            and document the endpoints you build like a professional
+            backend developer.
+          </p>
+
+          <h2>What You'll Learn</h2>
+          <ul>
+            <li>Building REST APIs with Node.js and Express</li>
+            <li>Routing, middleware, and error handling</li>
+            <li>Connecting an API to a database</li>
+            <li>Authentication with JSON Web Tokens</li>
+            <li>Testing and documenting API endpoints</li>
+          </ul>
+
+          <h2>Course Content</h2>
+          <ul>
+            <li>Module 1: Node.js &amp; Express Fundamentals</li>
+            <li>Module 2: Routing &amp; Middleware</li>
+            <li>Module 3: Connecting to a Database</li>
+            <li>Module 4: Authentication with JWT</li>
+            <li>Module 5: Testing &amp; API Documentation</li>
+          </ul>
+        </article>
+
+        <aside>
+          <h3>$40</h3>
+          <p><s>$120</s> · <span class="tag"><span>20%</span> Discount</span></p>
+          <p>Offer ends in 10 days</p>
+          <p>Author: John Doe</p>
+          <p>Duration: 13 hours</p>
+          <p>Lifetime Support</p>
+          <button class="course-cta" type="button" data-enroll="Coding APIs With Node.js">Add to basket</button>
+        </aside>
+      </div>
+    </div>
+
+    <footer>
+      <div class="columns">
+        <div class="col">
+          <h5>Site Links</h5>
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html#faq">FAQ</a>
+        </div>
+        <div class="col">
+          <h5>Other Pages</h5>
+          <a href="404.html">404 Page</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="col">
+          <h5>Collaboration</h5>
+          <a href="#">Work With Us</a>
+          <a href="#">Partnerships</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="col last">
+          <h5>About Us</h5>
+          <p>We are a team of passionate educators and professionals dedicated to providing high-quality learning experiences.</p>
+          <div class="social link">
+            <a href="#" aria-label="Facebook"
+              ><i class="bx bxl-facebook" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="bx bxl-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bx bxl-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 IT Online Education. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

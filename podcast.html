@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <meta name="description" content="Short, practical podcast episodes to keep you learning on the go." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Podcast | IT Online Education" />
+    <meta property="og:description" content="Short, practical podcast episodes to keep you learning on the go." />
+    <meta property="og:image" content="./assets/Logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Podcast | IT Online Education" />
+    <meta name="twitter:description" content="Short, practical podcast episodes to keep you learning on the go." />
+    <meta name="twitter:image" content="./assets/Logo.png" />
+    <title>Podcast | IT Online Education</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav>
+      <div class="left">
+        <div class="logo">
+          <img src="./assets/Logo.png" alt="IT Online Education" />
+        </div>
+        <div class="links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="articles.html">Articles</a>
+          <a href="podcast.html" class="active">Podcast</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button
+          class="hamburger"
+          id="navToggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+        >
+          <i class="bx bx-moon" aria-hidden="true"></i>
+        </button>
+        <a href="podcast.html" aria-label="Listen to podcasts"
+          ><i class="bx bx-headphone" aria-hidden="true"></i
+        ></a>
+        <div class="basket-wrapper">
+          <button
+            class="basket-toggle"
+            id="basketToggle"
+            type="button"
+            aria-label="View course basket"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-basket" aria-hidden="true"></i>
+          </button>
+          <div class="basket-dropdown" id="basketDropdown" hidden>
+            <p class="basket-dropdown-empty">Your basket is empty.</p>
+            <ul class="basket-dropdown-list" hidden></ul>
+            <div class="basket-dropdown-actions">
+              <a href="courses.html">View all courses</a>
+              <button type="button" class="basket-dropdown-clear">Clear basket</button>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" aria-label="Contact support"
+          ><i class="bx bx-user" aria-hidden="true"></i
+        ></a>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <p class="crumb"><a href="index.html">Home</a> / Podcast</p>
+      <h1>Weekly Podcasts</h1>
+      <p>Short, practical episodes to keep you learning on the go.</p>
+    </header>
+
+    <div class="content compact" id="main-content">
+      <div class="podcasts">
+        <div class="item" id="episode-1">
+          <div class="top">
+            <i class="bx bx-headphone"></i>
+            <div class="info">
+              <a href="episode-1.html">Learn Coding: Your First Week</a>
+              <p>10 Aug 2026</p>
+              <p>Listened 120 Times</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <audio controls preload="none" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" aria-label="Play preview of Learn Coding: Your First Week"></audio>
+            <h5 class="tag"><span>NEW</span> Podcast</h5>
+          </div>
+        </div>
+        <div class="item" id="episode-2">
+          <div class="top">
+            <i class="bx bx-headphone"></i>
+            <div class="info">
+              <a href="episode-2.html">How to Build a Study Habit</a>
+              <p>10 Aug 2026</p>
+              <p>Listened 120 Times</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <audio controls preload="none" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" aria-label="Play preview of How to Build a Study Habit"></audio>
+            <h5 class="tag"><span>NEW</span> Podcast</h5>
+          </div>
+        </div>
+        <div class="item" id="episode-3">
+          <div class="top">
+            <i class="bx bx-headphone"></i>
+            <div class="info">
+              <a href="episode-3.html">From Course to Portfolio</a>
+              <p>10 Aug 2026</p>
+              <p>Listened 120 Times</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <audio controls preload="none" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" aria-label="Play preview of From Course to Portfolio"></audio>
+            <h5 class="tag"><span>NEW</span> Podcast</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="columns">
+        <div class="col">
+          <h5>Site Links</h5>
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html#faq">FAQ</a>
+        </div>
+        <div class="col">
+          <h5>Other Pages</h5>
+          <a href="404.html">404 Page</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="col">
+          <h5>Collaboration</h5>
+          <a href="#">Work With Us</a>
+          <a href="#">Partnerships</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="col last">
+          <h5>About Us</h5>
+          <p>We are a team of passionate educators and professionals dedicated to providing high-quality learning experiences.</p>
+          <div class="social link">
+            <a href="#" aria-label="Facebook"
+              ><i class="bx bxl-facebook" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="bx bxl-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bx bxl-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 IT Online Education. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

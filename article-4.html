@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <meta name="description" content="A practical way to pick your first programming language based on what you actually want to build." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Choose the Right First Programming Language | IT Online Education" />
+    <meta property="og:description" content="A practical way to pick your first programming language based on what you actually want to build." />
+    <meta property="og:image" content="./assets/art-4.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Choose the Right First Programming Language | IT Online Education" />
+    <meta name="twitter:description" content="A practical way to pick your first programming language based on what you actually want to build." />
+    <meta name="twitter:image" content="./assets/art-4.jpg" />
+    <title>Choose the Right First Programming Language | IT Online Education</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav>
+      <div class="left">
+        <div class="logo">
+          <img src="./assets/Logo.png" alt="IT Online Education" />
+        </div>
+        <div class="links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="articles.html" class="active">Articles</a>
+          <a href="podcast.html">Podcast</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button
+          class="hamburger"
+          id="navToggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+        >
+          <i class="bx bx-moon" aria-hidden="true"></i>
+        </button>
+        <a href="podcast.html" aria-label="Listen to podcasts"
+          ><i class="bx bx-headphone" aria-hidden="true"></i
+        ></a>
+        <div class="basket-wrapper">
+          <button
+            class="basket-toggle"
+            id="basketToggle"
+            type="button"
+            aria-label="View course basket"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-basket" aria-hidden="true"></i>
+          </button>
+          <div class="basket-dropdown" id="basketDropdown" hidden>
+            <p class="basket-dropdown-empty">Your basket is empty.</p>
+            <ul class="basket-dropdown-list" hidden></ul>
+            <div class="basket-dropdown-actions">
+              <a href="courses.html">View all courses</a>
+              <button type="button" class="basket-dropdown-clear">Clear basket</button>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" aria-label="Contact support"
+          ><i class="bx bx-user" aria-hidden="true"></i
+        ></a>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <p class="crumb"><a href="index.html">Home</a> / <a href="articles.html">Articles</a> / First Language</p>
+      <h1>Choose the Right First Programming Language</h1>
+      <p>A practical way to pick your first language based on what you actually want to build.</p>
+    </header>
+
+    <div class="content compact" id="main-content">
+      <div class="article-detail">
+        <img src="./assets/art-4.jpg" alt="Students collaborating at a table" />
+        <p class="meta">
+          <i class="bx bx-show" aria-hidden="true"></i> +420 views
+        </p>
+
+        <p>
+          "Which language should I learn first?" doesn't have one right
+          answer — it has one right question: what do you actually want to
+          build? The best first language is the one that gets you making
+          something you care about as fast as possible, not the one that
+          ranks highest on some list.
+        </p>
+
+        <h2>Want to Build Websites?</h2>
+        <p>
+          Start with JavaScript. It runs in every browser, pairs with HTML
+          and CSS you'll need anyway, and lets you see results immediately.
+          Once you're comfortable, a framework like React or a toolkit like
+          Bootstrap will feel like a natural next step rather than a wall to
+          climb.
+        </p>
+
+        <h2>Want to Build Backend Systems or APIs?</h2>
+        <p>
+          Node.js lets you stay in JavaScript while working server-side, and
+          PHP remains one of the most widely deployed languages for
+          web backends — both are practical choices if you want to build
+          the logic behind an app rather than just its interface.
+        </p>
+
+        <h2>Not Sure Yet? Pick One and Commit</h2>
+        <p>
+          If nothing above jumps out, that's fine — the language matters far
+          less than actually building something with it. Programming
+          concepts transfer between languages far more than beginners
+          expect, so the "wrong" first choice rarely wastes your time. The
+          real risk isn't picking the wrong language; it's switching
+          languages every time it gets hard.
+        </p>
+
+        <div class="cta-note">
+          <p>
+            Still not sure where to start? <a href="contact.html">Ask us</a>
+            and we'll point you at the right course for your goals.
+          </p>
+        </div>
+
+        <div class="more-articles">
+          <h3>More Articles</h3>
+          <ul>
+            <li><a href="article-2.html">How to Learn Coding Consistently</a></li>
+            <li><a href="article-3.html">From Tutorials to Real Projects</a></li>
+            <li><a href="articles.html">See all articles</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="columns">
+        <div class="col">
+          <h5>Site Links</h5>
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html#faq">FAQ</a>
+        </div>
+        <div class="col">
+          <h5>Other Pages</h5>
+          <a href="404.html">404 Page</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="col">
+          <h5>Collaboration</h5>
+          <a href="#">Work With Us</a>
+          <a href="#">Partnerships</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="col last">
+          <h5>About Us</h5>
+          <p>We are a team of passionate educators and professionals dedicated to providing high-quality learning experiences.</p>
+          <div class="social link">
+            <a href="#" aria-label="Facebook"
+              ><i class="bx bxl-facebook" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="bx bxl-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bx bxl-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 IT Online Education. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

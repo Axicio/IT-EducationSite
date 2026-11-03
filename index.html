@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <meta name="description" content="Practical, project-based IT courses for aspiring developers." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IT Online Education | Learn by Building" />
+    <meta property="og:description" content="Practical, project-based IT courses for aspiring developers." />
+    <meta property="og:image" content="./assets/Logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="IT Online Education | Learn by Building" />
+    <meta name="twitter:description" content="Practical, project-based IT courses for aspiring developers." />
+    <meta name="twitter:image" content="./assets/Logo.png" />
+    <title>IT Online Education | Learn by Building</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav>
+      <div class="left">
+        <div class="logo">
+          <img src="./assets/Logo.png" alt="IT Online Education" />
+        </div>
+        <div class="links" id="navLinks">
+          <a href="index.html" class="active">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="articles.html">Articles</a>
+          <a href="podcast.html">Podcast</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button
+          class="hamburger"
+          id="navToggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+        >
+          <i class="bx bx-moon" aria-hidden="true"></i>
+        </button>
+        <a href="podcast.html" aria-label="Listen to podcasts"
+          ><i class="bx bx-headphone" aria-hidden="true"></i
+        ></a>
+        <div class="basket-wrapper">
+          <button
+            class="basket-toggle"
+            id="basketToggle"
+            type="button"
+            aria-label="View course basket"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-basket" aria-hidden="true"></i>
+          </button>
+          <div class="basket-dropdown" id="basketDropdown" hidden>
+            <p class="basket-dropdown-empty">Your basket is empty.</p>
+            <ul class="basket-dropdown-list" hidden></ul>
+            <div class="basket-dropdown-actions">
+              <a href="courses.html">View all courses</a>
+              <button type="button" class="basket-dropdown-clear">Clear basket</button>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" aria-label="Contact support"
+          ><i class="bx bx-user" aria-hidden="true"></i
+        ></a>
+      </div>
+    </nav>
+
+    <header>
+      <div class="info">
+        <h1>Build practical coding skills, one project at a time.</h1>
+        <p>
+          Learn in-demand IT skills through clear lessons, guided projects, and
+          support that helps you keep moving forward.
+        </p>
+        <div class="buttons">
+          <button class="see-all" id="seeAllBtn" type="button">
+            See All Courses
+          </button>
+          <button id="whatIsCodingBtn" type="button">What is Coding?</button>
+          <div class="search">
+            <input
+              type="search"
+              id="searchInput"
+              aria-label="Search courses and articles"
+              placeholder="Search what you desire...."
+            />
+            <button type="button" id="searchBtn" aria-label="Search">
+              <i class="bx bx-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="modal-backdrop" id="codingModalBackdrop">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="codingModalTitle">
+        <button class="modal-close" id="codingModalClose" type="button" aria-label="Close">
+          <i class="bx bx-x" aria-hidden="true"></i>
+        </button>
+        <i class="bx bx-code-alt modal-icon" aria-hidden="true"></i>
+        <h3 id="codingModalTitle">What is Coding?</h3>
+        <p>
+          Coding is the process of writing instructions — in a language like
+          JavaScript, Python, or PHP — that tell a computer what to do. It's
+          how websites, apps, and the software you use every day actually get
+          built.
+        </p>
+        <p>
+          You don't need a technical background to start: every course on
+          this site begins from the fundamentals and builds up from there.
+        </p>
+        <a href="courses.html" class="see-all-link">Browse Courses</a>
+      </div>
+    </div>
+
+    <div class="content" id="main-content">
+      <div class="separator">
+        <h2>Popular Courses</h2>
+        <a href="courses.html"
+          >See all courses<i class="bx bx-chevron-right" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="courses">
+        <div class="item">
+          <div class="top">
+            <img src="./assets/course-1.jpg" alt="React course preview" width="120" height="120" loading="lazy" decoding="async" />
+            <div class="info">
+              <a href="course-react.html">Learn React With Mini Projects</a>
+              <p>Author: John Doe</p>
+              <p>Duration: 10 hours</p>
+              <p>Lifetime Support</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <h5>Price: $40</h5>
+              <p>Old Price: $120</p>
+            </div>
+            <h5 class="tag"><span>+400</span> Students Enrolled</h5>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top">
+            <img src="./assets/course-2.jpg" alt="Bootstrap course preview" width="120" height="120" loading="lazy" decoding="async" />
+            <div class="info">
+              <a href="course-bootstrap.html">Learn BootStrap With Complete Project</a>
+              <p>Author: John Doe</p>
+              <p>Duration: 15 hours</p>
+              <p>Lifetime Support</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <h5>Price: $40</h5>
+              <p>Old Price: $120</p>
+            </div>
+            <div class="discount">
+              <div class="time">
+                <p>Until</p>
+                <h5>5 days</h5>
+              </div>
+            </div>
+            <h5 class="tag"><span>20%</span> Discount</h5>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top">
+            <img src="./assets/course-3.jpg" alt="JavaScript course preview" width="120" height="120" loading="lazy" decoding="async" />
+            <div class="info">
+              <a href="course-javascript.html">Learn JavaScript With 100 Video</a>
+              <p>Author: David Smith</p>
+              <p>Duration: 30 hours</p>
+              <p>Lifetime Support</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <h5>Price: $40</h5>
+              <p>Old Price: $120</p>
+            </div>
+            <div class="discount">
+              <div class="time">
+                <p>Until</p>
+                <h5>10 days</h5>
+              </div>
+            </div>
+            <h5 class="tag"><span>20%</span> Discount</h5>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top">
+            <img
+              src="./assets/course-4.jpg"
+              alt="Responsive web design course preview"
+              width="120"
+              height="120"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="info">
+              <a href="course-design.html">Learn Responsive Web Design</a>
+              <p>Author: John Doe</p>
+              <p>Duration: 12 hours</p>
+              <p>Lifetime Support</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <h5>Price: $40</h5>
+              <p>Old Price: $120</p>
+            </div>
+            <div class="discount">
+              <div class="time">
+                <p>Until</p>
+                <h5>10 days</h5>
+              </div>
+            </div>
+            <h5 class="tag"><span>20%</span> Discount</h5>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top">
+            <img src="./assets/course-5.jpg" alt="PHP course preview" width="120" height="120" loading="lazy" decoding="async" />
+            <div class="info">
+              <a href="course-php.html">Learn PHP With Mini Projects</a>
+              <p>Author: Kevin Smith</p>
+              <p>Duration: 30 hours</p>
+              <p>Lifetime Support</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <h5>Price: $40</h5>
+              <p>Old Price: $120</p>
+            </div>
+            <div class="discount">
+              <div class="time">
+                <p>Until</p>
+                <h5>10 days</h5>
+              </div>
+            </div>
+            <h5 class="tag"><span>20%</span> Discount</h5>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top">
+            <img src="./assets/course-6.jpg" alt="Node.js API course preview" width="120" height="120" loading="lazy" decoding="async" />
+            <div class="info">
+              <a href="course-node.html">Coding API With Node.js</a>
+              <p>Author: John Doe</p>
+              <p>Duration: 13 hours</p>
+              <p>Lifetime Support</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="price">
+              <h5>Price: $40</h5>
+              <p>Old Price: $120</p>
+            </div>
+            <div class="discount">
+              <div class="time">
+                <p>Until</p>
+                <h5>10 days</h5>
+              </div>
+            </div>
+            <h5 class="tag"><span>20%</span> Discount</h5>
+          </div>
+        </div>
+      </div>
+      <div class="separator">
+        <h2>Student Comments</h2>
+      </div>
+
+      <div class="comments">
+        <p>
+          Here’s what our students say about the courses and the progress they
+          made while learning with us.
+        </p>
+        <div class="right">
+            <div class="item">
+              <img src="./assets/profile-1.png" alt="Student 1" width="32" height="32" loading="lazy" decoding="async">
+              <p>"This course helped me a lot in understanding the concepts."</p>
+            </div>
+            <div class="item">
+              <img src="./assets/profile-2.jpg" alt="Student 2" width="32" height="32" loading="lazy" decoding="async">
+              <p>"I really enjoyed this course and learned a lot."</p>
+            </div>
+             <div class="item">
+              <img src="./assets/profile-3.jpg" alt="Student 3" width="32" height="32" loading="lazy" decoding="async">
+              <p>"This course helped me a lot in understanding the concepts."</p>
+            </div>
+            <div class="item">
+              <img src="./assets/profile-4.jpg" alt="Student 4" width="32" height="32" loading="lazy" decoding="async">
+              <p>"What a great course!"</p>
+            </div>
+        </div>
+      </div>
+      <div class="separator">
+        <h2>Weekly Podcasts</h2>
+        <a href="podcast.html"
+          >See all podcasts<i class="bx bx-chevron-right" aria-hidden="true"></i
+        ></a>
+      </div>
+
+      <div class="podcasts">
+        <div class="item">
+          <div class="top">
+            <i class="bx bx-headphone"></i>
+            <div class="info">
+              <a href="episode-1.html">Learn Coding: Your First Week</a>
+              <p>10 Aug 2026</p>
+              <p>Listened 120 Times</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="duration">
+              <i class='bx bx-play-circle'></i>
+              <p>01:25</p>
+            </div>
+            <h5 class="tag"><span>NEW</span> Podcast</h5>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top">
+            <i class="bx bx-headphone"></i>
+            <div class="info">
+              <a href="episode-2.html">How to Build a Study Habit</a>
+              <p>10 Aug 2026</p>
+              <p>Listened 120 Times</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="duration">
+              <i class='bx bx-play-circle'></i>
+              <p>01:25</p>
+            </div>
+            <h5 class="tag"><span>NEW</span> Podcast</h5>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top">
+            <i class="bx bx-headphone"></i>
+            <div class="info">
+              <a href="episode-3.html">From Course to Portfolio</a>
+              <p>10 Aug 2026</p>
+              <p>Listened 120 Times</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="duration">
+              <i class='bx bx-play-circle'></i>
+              <p>01:25</p>
+            </div>
+            <h5 class="tag"><span>NEW</span> Podcast</h5>
+          </div>
+        </div>
+      </div>
+       <div class="separator">
+        <h2>Blog Articles</h2>
+        <a href="articles.html"
+          >See all articles<i class="bx bx-chevron-right" aria-hidden="true"></i
+        ></a>
+      </div>
+
+      <div class="articles">
+        <div class="item">
+          <div class="top">
+            <img src="./assets/art-1.jpg" alt="Creative branding workspace" width="400" height="160" loading="lazy" decoding="async">
+            <h5>Build a brand that learners trust</h5>
+          </div>
+          <div class="bottom">
+            <h5><span>+420</span> Views</h5>
+            <a href="article-1.html"
+              >Read More<i class="bx bx-chevron-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+         <div class="item">
+          <div class="top">
+            <img src="./assets/art-2.jpg" alt="Design and technology workspace" width="400" height="160" loading="lazy" decoding="async">
+            <h5>How to learn coding consistently</h5>
+          </div>
+          <div class="bottom">
+            <h5><span>+420</span> Views</h5>
+            <a href="article-2.html"
+              >Read More<i class="bx bx-chevron-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+         <div class="item">
+          <div class="top">
+            <img src="./assets/art-3.jpg" alt="Developer working on a laptop" width="400" height="160" loading="lazy" decoding="async">
+            <h5>From tutorials to real projects</h5>
+          </div>
+          <div class="bottom">
+            <h5><span>+420</span> Views</h5>
+            <a href="article-3.html"
+              >Read More<i class="bx bx-chevron-right" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="columns">
+        <div class="col">
+          <h5>Site Links</h5>
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html#faq">FAQ</a>
+        </div>
+        <div class="col">
+          <h5>Other Pages</h5>
+          <a href="404.html">404 Page</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="col">
+          <h5>Collaboration</h5>
+          <a href="#">Work With Us</a>
+          <a href="#">Partnerships</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="col last">
+          <h5>About Us</h5>
+          <p>We are a team of passionate educators and professionals dedicated to providing high-quality learning experiences.</p>
+          <div class="social link">
+            <a href="#" aria-label="Facebook"
+              ><i class="bx bxl-facebook" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="bx bxl-twitter" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bx bxl-instagram" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 IT Online Education. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
